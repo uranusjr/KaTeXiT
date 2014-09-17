@@ -290,7 +290,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "PATH=/usr/local/bin:$PATH\nROOT=$PWD/KaTeXiT\nRESOURCES=$ROOT/Resources\nif hash browserify 2>/dev/null; then\n    browserify $ROOT/main.js --standalone katexit > $RESOURCES/bundle.js\n\n    if hash uglifyjs 2>/dev/null; then\n        uglifyjs $RESOURCES/bundle.js > $RESOURCES/_bundle.js\n        mv $RESOURCES/_bundle.js $RESOURCES/bundle.js\n    fi\nfi";
+			shellScript = "PATH=/usr/local/bin:$PATH\nROOT=$PWD/KaTeXiT\nRESOURCES=$ROOT/Resources\nKATEX=$PWD/Dependency/KaTeX/static\n\nif [ -d \"$KATEX\" ]; then\nif hash browserify 2>/dev/null; then\nbrowserify $ROOT/main.js --standalone katexit > $RESOURCES/bundle.js\n\nif hash uglifyjs 2>/dev/null; then\nuglifyjs $RESOURCES/bundle.js > $RESOURCES/_bundle.js\nmv $RESOURCES/_bundle.js $RESOURCES/bundle.js\nfi\nfi\nif hash lessc 2>/dev/null; then\nlessc /katex.less > $RESOURCES/katex/katex.less.css\ncat $RESOURCES/katex/katex.less.css $KATEX/fonts.css > $RESOURCES/katex/katex.css\nif hash cleancss 2>/dev/null; then\ncleancss -o $RESOURCES/katex/katex.min.css $RESOURCES/katex/katex.css\nelse\ncp $RESOURCES/katex/katex.css $RESOURCES/katex/katex.min.css\nfi\nrm $RESOURCES/katex/katex.less.css $RESOURCES/katex/katex.css\nfi\ncp -r $KATEX/fonts $RESOURCES/katex\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 

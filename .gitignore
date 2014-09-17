@@ -167,3 +167,6 @@ xcuserdata
 ####
 # Other files
 #
+KaTeXiT/Resources/bundle.js
+KaTeXiT/Resources/katex/fonts/
+KaTeXiT/Resources/katex/katex.min.css
