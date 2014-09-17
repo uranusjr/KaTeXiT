@@ -23,6 +23,7 @@
 		1F88D67419C9535C00239C83 /* KaTeXiTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F88D67319C9535C00239C83 /* KaTeXiTTests.m */; };
 		1F88D67F19C958FE00239C83 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F88D67E19C958FE00239C83 /* WebKit.framework */; };
 		1F88D68319C9608900239C83 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F88D68219C9608900239C83 /* JavaScriptCore.framework */; };
+		1FBE8CD219C9D4BE00562D0B /* main.html in Resources */ = {isa = PBXBuildFile; fileRef = 1FBE8CD119C9D4BE00562D0B /* main.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		1F88D67E19C958FE00239C83 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		1F88D68019C95A3100239C83 /* katex */ = {isa = PBXFileReference; lastKnownFileType = folder; name = katex; path = Resources/katex; sourceTree = "<group>"; };
 		1F88D68219C9608900239C83 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		1FBE8CD119C9D4BE00562D0B /* main.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = main.html; path = Resources/main.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 			children = (
 				1F2879BD19C983910057DEBF /* bundle.js */,
 				1F88D68019C95A3100239C83 /* katex */,
+				1FBE8CD119C9D4BE00562D0B /* main.html */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F54E84819C9926700C9B58F /* katex in Resources */,
+				1FBE8CD219C9D4BE00562D0B /* main.html in Resources */,
 				1F88D65D19C9535C00239C83 /* KTTDocument.xib in Resources */,
 				1F88D66219C9535C00239C83 /* Images.xcassets in Resources */,
 				1F88D65119C9535C00239C83 /* InfoPlist.strings in Resources */,
