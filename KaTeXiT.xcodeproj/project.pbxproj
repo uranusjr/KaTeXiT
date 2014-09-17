@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F2879BF19C984430057DEBF /* bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = 1F2879BD19C983910057DEBF /* bundle.js */; };
+		1F54E84819C9926700C9B58F /* katex in Resources */ = {isa = PBXBuildFile; fileRef = 1F88D68019C95A3100239C83 /* katex */; };
+		1F88D64719C9535B00239C83 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F88D64619C9535B00239C83 /* Cocoa.framework */; };
+		1F88D65119C9535C00239C83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F88D64F19C9535C00239C83 /* InfoPlist.strings */; };
+		1F88D65319C9535C00239C83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F88D65219C9535C00239C83 /* main.m */; };
+		1F88D65719C9535C00239C83 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1F88D65519C9535C00239C83 /* Credits.rtf */; };
+		1F88D65A19C9535C00239C83 /* KTTDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F88D65919C9535C00239C83 /* KTTDocument.m */; };
+		1F88D65D19C9535C00239C83 /* KTTDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F88D65B19C9535C00239C83 /* KTTDocument.xib */; };
+		1F88D66019C9535C00239C83 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F88D65E19C9535C00239C83 /* MainMenu.xib */; };
+		1F88D66219C9535C00239C83 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F88D66119C9535C00239C83 /* Images.xcassets */; };
+		1F88D66919C9535C00239C83 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F88D66819C9535C00239C83 /* XCTest.framework */; };
+		1F88D66A19C9535C00239C83 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F88D64619C9535B00239C83 /* Cocoa.framework */; };
+		1F88D67219C9535C00239C83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F88D67019C9535C00239C83 /* InfoPlist.strings */; };
+		1F88D67419C9535C00239C83 /* KaTeXiTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F88D67319C9535C00239C83 /* KaTeXiTTests.m */; };
+		1F88D67F19C958FE00239C83 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F88D67E19C958FE00239C83 /* WebKit.framework */; };
+		1F88D68319C9608900239C83 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F88D68219C9608900239C83 /* JavaScriptCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F88D66B19C9535C00239C83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F88D63B19C9535B00239C83 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F88D64219C9535B00239C83;
+			remoteInfo = KaTeXiT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F2879BD19C983910057DEBF /* bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = bundle.js; path = Resources/bundle.js; sourceTree = "<group>"; };
+		1F88D64319C9535B00239C83 /* KaTeXiT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KaTeXiT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F88D64619C9535B00239C83 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1F88D64919C9535B00239C83 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1F88D64A19C9535B00239C83 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1F88D64B19C9535B00239C83 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1F88D64E19C9535C00239C83 /* KaTeXiT-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KaTeXiT-Info.plist"; sourceTree = "<group>"; };
+		1F88D65019C9535C00239C83 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1F88D65219C9535C00239C83 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F88D65419C9535C00239C83 /* KaTeXiT-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KaTeXiT-Prefix.pch"; sourceTree = "<group>"; };
+		1F88D65619C9535C00239C83 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		1F88D65819C9535C00239C83 /* KTTDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTTDocument.h; sourceTree = "<group>"; };
+		1F88D65919C9535C00239C83 /* KTTDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTTDocument.m; sourceTree = "<group>"; };
+		1F88D65C19C9535C00239C83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/KTTDocument.xib; sourceTree = "<group>"; };
+		1F88D65F19C9535C00239C83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1F88D66119C9535C00239C83 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1F88D66719C9535C00239C83 /* KaTeXiTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KaTeXiTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F88D66819C9535C00239C83 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1F88D66F19C9535C00239C83 /* KaTeXiTTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KaTeXiTTests-Info.plist"; sourceTree = "<group>"; };
+		1F88D67119C9535C00239C83 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1F88D67319C9535C00239C83 /* KaTeXiTTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KaTeXiTTests.m; sourceTree = "<group>"; };
+		1F88D67E19C958FE00239C83 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		1F88D68019C95A3100239C83 /* katex */ = {isa = PBXFileReference; lastKnownFileType = folder; name = katex; path = Resources/katex; sourceTree = "<group>"; };
+		1F88D68219C9608900239C83 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F88D64019C9535B00239C83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F88D68319C9608900239C83 /* JavaScriptCore.framework in Frameworks */,
+				1F88D67F19C958FE00239C83 /* WebKit.framework in Frameworks */,
+				1F88D64719C9535B00239C83 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F88D66419C9535C00239C83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F88D66A19C9535C00239C83 /* Cocoa.framework in Frameworks */,
+				1F88D66919C9535C00239C83 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F88D63A19C9535B00239C83 = {
+			isa = PBXGroup;
+			children = (
+				1F88D64C19C9535C00239C83 /* KaTeXiT */,
+				1F88D66D19C9535C00239C83 /* KaTeXiTTests */,
+				1F88D64519C9535B00239C83 /* Frameworks */,
+				1F88D64419C9535B00239C83 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F88D64419C9535B00239C83 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F88D64319C9535B00239C83 /* KaTeXiT.app */,
+				1F88D66719C9535C00239C83 /* KaTeXiTTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F88D64519C9535B00239C83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F88D68219C9608900239C83 /* JavaScriptCore.framework */,
+				1F88D67E19C958FE00239C83 /* WebKit.framework */,
+				1F88D64619C9535B00239C83 /* Cocoa.framework */,
+				1F88D66819C9535C00239C83 /* XCTest.framework */,
+				1F88D64819C9535B00239C83 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F88D64819C9535B00239C83 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F88D64919C9535B00239C83 /* AppKit.framework */,
+				1F88D64A19C9535B00239C83 /* CoreData.framework */,
+				1F88D64B19C9535B00239C83 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1F88D64C19C9535C00239C83 /* KaTeXiT */ = {
+			isa = PBXGroup;
+			children = (
+				1F88D65819C9535C00239C83 /* KTTDocument.h */,
+				1F88D65919C9535C00239C83 /* KTTDocument.m */,
+				1F88D65B19C9535C00239C83 /* KTTDocument.xib */,
+				1F88D65E19C9535C00239C83 /* MainMenu.xib */,
+				1F88D66119C9535C00239C83 /* Images.xcassets */,
+				1F88D64D19C9535C00239C83 /* Supporting Files */,
+			);
+			path = KaTeXiT;
+			sourceTree = "<group>";
+		};
+		1F88D64D19C9535C00239C83 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F88D67D19C9574300239C83 /* Resources */,
+				1F88D64E19C9535C00239C83 /* KaTeXiT-Info.plist */,
+				1F88D64F19C9535C00239C83 /* InfoPlist.strings */,
+				1F88D65219C9535C00239C83 /* main.m */,
+				1F88D65419C9535C00239C83 /* KaTeXiT-Prefix.pch */,
+				1F88D65519C9535C00239C83 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F88D66D19C9535C00239C83 /* KaTeXiTTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F88D67319C9535C00239C83 /* KaTeXiTTests.m */,
+				1F88D66E19C9535C00239C83 /* Supporting Files */,
+			);
+			path = KaTeXiTTests;
+			sourceTree = "<group>";
+		};
+		1F88D66E19C9535C00239C83 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F88D66F19C9535C00239C83 /* KaTeXiTTests-Info.plist */,
+				1F88D67019C9535C00239C83 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F88D67D19C9574300239C83 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1F2879BD19C983910057DEBF /* bundle.js */,
+				1F88D68019C95A3100239C83 /* katex */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F88D64219C9535B00239C83 /* KaTeXiT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F88D67719C9535C00239C83 /* Build configuration list for PBXNativeTarget "KaTeXiT" */;
+			buildPhases = (
+				1F54E84619C98E3900C9B58F /* Compile bundle.js (if possible) */,
+				1F88D63F19C9535B00239C83 /* Sources */,
+				1F88D64019C9535B00239C83 /* Frameworks */,
+				1F88D64119C9535B00239C83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KaTeXiT;
+			productName = KaTeXiT;
+			productReference = 1F88D64319C9535B00239C83 /* KaTeXiT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F88D66619C9535C00239C83 /* KaTeXiTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F88D67A19C9535C00239C83 /* Build configuration list for PBXNativeTarget "KaTeXiTTests" */;
+			buildPhases = (
+				1F88D66319C9535C00239C83 /* Sources */,
+				1F88D66419C9535C00239C83 /* Frameworks */,
+				1F88D66519C9535C00239C83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F88D66C19C9535C00239C83 /* PBXTargetDependency */,
+			);
+			name = KaTeXiTTests;
+			productName = KaTeXiTTests;
+			productReference = 1F88D66719C9535C00239C83 /* KaTeXiTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F88D63B19C9535B00239C83 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KTT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = uranusjr;
+				TargetAttributes = {
+					1F88D66619C9535C00239C83 = {
+						TestTargetID = 1F88D64219C9535B00239C83;
+					};
+				};
+			};
+			buildConfigurationList = 1F88D63E19C9535B00239C83 /* Build configuration list for PBXProject "KaTeXiT" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F88D63A19C9535B00239C83;
+			productRefGroup = 1F88D64419C9535B00239C83 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F88D64219C9535B00239C83 /* KaTeXiT */,
+				1F88D66619C9535C00239C83 /* KaTeXiTTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F88D64119C9535B00239C83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F54E84819C9926700C9B58F /* katex in Resources */,
+				1F88D65D19C9535C00239C83 /* KTTDocument.xib in Resources */,
+				1F88D66219C9535C00239C83 /* Images.xcassets in Resources */,
+				1F88D65119C9535C00239C83 /* InfoPlist.strings in Resources */,
+				1F88D65719C9535C00239C83 /* Credits.rtf in Resources */,
+				1F88D66019C9535C00239C83 /* MainMenu.xib in Resources */,
+				1F2879BF19C984430057DEBF /* bundle.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F88D66519C9535C00239C83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F88D67219C9535C00239C83 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F54E84619C98E3900C9B58F /* Compile bundle.js (if possible) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Compile bundle.js (if possible)";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "PATH=/usr/local/bin:$PATH\nROOT=$PWD/KaTeXiT\nRESOURCES=$ROOT/Resources\nif hash browserify 2>/dev/null; then\n    browserify $ROOT/main.js --standalone katexit > $RESOURCES/bundle.js\n\n    if hash uglifyjs 2>/dev/null; then\n        uglifyjs $RESOURCES/bundle.js > $RESOURCES/_bundle.js\n        mv $RESOURCES/_bundle.js $RESOURCES/bundle.js\n    fi\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F88D63F19C9535B00239C83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F88D65A19C9535C00239C83 /* KTTDocument.m in Sources */,
+				1F88D65319C9535C00239C83 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F88D66319C9535C00239C83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F88D67419C9535C00239C83 /* KaTeXiTTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F88D66C19C9535C00239C83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F88D64219C9535B00239C83 /* KaTeXiT */;
+			targetProxy = 1F88D66B19C9535C00239C83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F88D64F19C9535C00239C83 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F88D65019C9535C00239C83 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1F88D65519C9535C00239C83 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F88D65619C9535C00239C83 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		1F88D65B19C9535C00239C83 /* KTTDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F88D65C19C9535C00239C83 /* Base */,
+			);
+			name = KTTDocument.xib;
+			sourceTree = "<group>";
+		};
+		1F88D65E19C9535C00239C83 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F88D65F19C9535C00239C83 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		1F88D67019C9535C00239C83 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F88D67119C9535C00239C83 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F88D67519C9535C00239C83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F88D67619C9535C00239C83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1F88D67819C9535C00239C83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KaTeXiT/KaTeXiT-Prefix.pch";
+				INFOPLIST_FILE = "KaTeXiT/KaTeXiT-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1F88D67919C9535C00239C83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KaTeXiT/KaTeXiT-Prefix.pch";
+				INFOPLIST_FILE = "KaTeXiT/KaTeXiT-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1F88D67B19C9535C00239C83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KaTeXiT.app/Contents/MacOS/KaTeXiT";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KaTeXiT/KaTeXiT-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KaTeXiTTests/KaTeXiTTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1F88D67C19C9535C00239C83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KaTeXiT.app/Contents/MacOS/KaTeXiT";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KaTeXiT/KaTeXiT-Prefix.pch";
+				INFOPLIST_FILE = "KaTeXiTTests/KaTeXiTTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F88D63E19C9535B00239C83 /* Build configuration list for PBXProject "KaTeXiT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F88D67519C9535C00239C83 /* Debug */,
+				1F88D67619C9535C00239C83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F88D67719C9535C00239C83 /* Build configuration list for PBXNativeTarget "KaTeXiT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F88D67819C9535C00239C83 /* Debug */,
+				1F88D67919C9535C00239C83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F88D67A19C9535C00239C83 /* Build configuration list for PBXNativeTarget "KaTeXiTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F88D67B19C9535C00239C83 /* Debug */,
+				1F88D67C19C9535C00239C83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F88D63B19C9535B00239C83 /* Project object */;
+}

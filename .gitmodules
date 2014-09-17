@@ -1,0 +1,3 @@
+[submodule "Dependency/KaTeX"]
+	path = Dependency/KaTeX
+	url = https://github.com/Khan/KaTeX.git
