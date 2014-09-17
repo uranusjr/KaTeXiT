@@ -186,7 +186,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F88D67719C9535C00239C83 /* Build configuration list for PBXNativeTarget "KaTeXiT" */;
 			buildPhases = (
-				1F54E84619C98E3900C9B58F /* Compile bundle.js (if possible) */,
+				1F54E84619C98E3900C9B58F /* Compile KaTeX assets (if possible) */,
 				1F88D63F19C9535B00239C83 /* Sources */,
 				1F88D64019C9535B00239C83 /* Frameworks */,
 				1F88D64119C9535B00239C83 /* Resources */,
@@ -278,19 +278,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1F54E84619C98E3900C9B58F /* Compile bundle.js (if possible) */ = {
+		1F54E84619C98E3900C9B58F /* Compile KaTeX assets (if possible) */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Compile bundle.js (if possible)";
+			name = "Compile KaTeX assets (if possible)";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "PATH=/usr/local/bin:$PATH\nROOT=$PWD/KaTeXiT\nRESOURCES=$ROOT/Resources\nKATEX=$PWD/Dependency/KaTeX/static\n\nif [ -d \"$KATEX\" ]; then\nif hash browserify 2>/dev/null; then\nbrowserify $ROOT/main.js --standalone katexit > $RESOURCES/bundle.js\n\nif hash uglifyjs 2>/dev/null; then\nuglifyjs $RESOURCES/bundle.js > $RESOURCES/_bundle.js\nmv $RESOURCES/_bundle.js $RESOURCES/bundle.js\nfi\nfi\nif hash lessc 2>/dev/null; then\nlessc /katex.less > $RESOURCES/katex/katex.less.css\ncat $RESOURCES/katex/katex.less.css $KATEX/fonts.css > $RESOURCES/katex/katex.css\nif hash cleancss 2>/dev/null; then\ncleancss -o $RESOURCES/katex/katex.min.css $RESOURCES/katex/katex.css\nelse\ncp $RESOURCES/katex/katex.css $RESOURCES/katex/katex.min.css\nfi\nrm $RESOURCES/katex/katex.less.css $RESOURCES/katex/katex.css\nfi\ncp -r $KATEX/fonts $RESOURCES/katex\nfi";
+			shellScript = "bash ./build_katex.sh";
 		};
 /* End PBXShellScriptBuildPhase section */
 
